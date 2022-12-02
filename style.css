@@ -173,11 +173,13 @@ section{
 .video-slide{
   position: absolute;
   width: 100%;
-  /* clip-path: circle(0.0% at 0 50%); */
+  clip-path: circle(0.0% at 0 50%);
 }
 
 .video-slide.active{
-  /* clip-path: circle(150.0% at 0 50%); */
+  clip-path: circle(150.0% at 0 50%);
+  transition: 1.7s ease;
+  transition-property: clip-path;
 }
 
 @media(max-width: 1040px){

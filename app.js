@@ -12,7 +12,7 @@ menuBtn.addEventListener('click', () => {
 const btns = document.querySelectorAll('.nav-btn');
 const slides = document.querySelectorAll('.video-slide');
 
-let sliderNav = function (manual) {
+var sliderNav = function (manual) {
   btns.forEach((btn) => {
     btn.classList.remove('active');
   });
@@ -23,6 +23,7 @@ let sliderNav = function (manual) {
 
   btns[manual].classList.add('active');
   slides[manual].classList.add('active');
+  console.log(manual);
 };
 
 btns.forEach((btn, i) => {
